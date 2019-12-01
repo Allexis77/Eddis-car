@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Безалы</title>
+  <!-- Фавикон -->
+  <link rel="shortcut icon" href="./img/icon/favicon.ico" type="image/png">
+  <!-- Шрифт Monsterrat -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <!-- Библеотеки -->
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <!-- Свои стили -->
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+  <!-- START HEADER -->
+  <header class="header" >
+    <div class="header-menu header-menu-stocky">
+      <div class="container">
+        <div class="row">
+
+          <div class="header-menu__logo col-xl-3 col-lg-3 col-md-3 col-3">
+            <img src="./img/icon/logo.png" alt="logo">
+          </div>
+          <div class="header-menu__data col-lg-2 col col-xl-2 hidden-mobile col-md-2">
+            <span>c 9:00 до 21:00</span>
+            <p>без выходных</p>
+          </div>
+          <div class="header-menu__tel col-lg-2 hidden-mobile col-md-3 col-sm-6 col-5">
+            <a href="tel:+78182474725">+7(818) 247-47-25</a>
+            <a href="tel:+78182474725">+7(818) 247-47-25</a>
+          </div>
+          <div class="header-menu__btn hidden-mobile col-3 col-md-2"
+            id="modalBtn">
+            <button class="btn-primary">
+              <a href="#2">Заказать звонок</a>
+            </button>
+          </div>
+          <div class="header-menu__btn-mobile mobile-phone col-4 col-sm-2 col-2 d-lg-none d-md-none ml-auto no-padding">
+            <a href="#consult">
+              <img  src="https://image.flaticon.com/icons/svg/1384/1384055.svg" alt="">
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Header-menu -->
+    <div class="header-content" style="background: url(./img/bg/bg-header.png) center no-repeat; background-size: cover;">
+      <div class="container">
+        <div class="row">
+          <div class="header-content__box col-lg-12 col-md-12 col-sm-12 col-12 no-padding wow fadeInUp" data-wow-delay='0.1s'>
+            <div class="header-content__box-h col-lg-6 col-xl-6">
+              <h1>Оригинальные запчасти для Белаз</h1>
+            </div>
+
+            <div class="header-content__box-p col-lg-6 col-xl-6">
+              <p>с бесплатной доставкой в Ваш город!</p>
+            </div>
+
+            <div class="header-content__box-advantage col-lg-6 col-xl-6">
+              <nav>
+                <ul>
+                  <li class="header-content__box-advantage-list col-6">
+                    <img src="./img/icon/black/pig-icon-header.png" alt="price">
+                    <p class="col-4">Дилерские цены - ниже на 20%, работаем без посредников!</p>
+                  </li>
+                  <li class="header-content__box-advantage-list col-6">
+                    <img src="./img/icon/black/car-icon-header.png" alt="delivery">
+                    <p class="col-4 header-content__box-advantage-list__text-primary">Срочная бесплатная доставка за 7
+                      дней</p>
+                  </li>
+                  <li class="header-content__box-advantage-list col-6">
+                    <img src="./img/icon/black/calendar-icon-header.png" alt="installment plan">
+                    <p class="col-4 header-content__box-advantage-list__text-primary">Даем рассрочку 6 месяцев</p>
+                  </li>
+                  <li class="header-content__box-advantage-list col-6">
+                    <img src="./img/icon/black/testminars-icon-header.png" alt="guarantee">
+                    <p class="col-4"> Даем гарантию от 12 месяцев</p>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END HEADER -->
+  <div id="myModal-window" class="modal">
+
+    <div class="modal-content">
+      
+    <span class="close">&times;</span>
+      <div class="modal-content__box">
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите ваш номер телефона"
+          class="modal-content__number  modal-content__form col-4">
+        <input type="text" placeholder="Введите ваше Имя" class="modal-content__name  modal-content__form">
+        <input type="text" placeholder="Введите индекс Детали" class="modal-content__index  modal-content__form">
+        <button type="submit" class="modal-content__btn">Отправить</button>
+      </div>
+      <p>Наш менеджер перезвонит вам через 5 минут</p>
+    </div>
+  </div>
+  <!-- BTN Bakc-to-top -->
+  <div class="back-to-top">
+    <button><a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="back-to-top-svg">
+          <path d="M6.028 0v6.425l5.549 5.575-5.549 5.575v6.425l11.944-12z" /></svg>
+      </a></button>
+  </div>
+  <!-- BTN Bakc-to-top -->
+
+  <!-- START PRICE -->
+  <section class="price" style="background: url(./img/bg/bg-order-number.png) center no-repeat; background-size: cover;" >
+    <div class="container">
+      <div class="row">
+        <div class="price-h price-box col-5">
+          <h2>Получите прайс прямо сейчас на электронную почту!</h2>
+        </div>
+
+        <div class="price-form price-box col-12 col-xl-12">
+          <div class="price-form__email price-form__box ">
+            <input type="email" class="col-lg-4 col-4 " placeholder="Введите ваш e-mail">
+            <img src="./img/icon/mail-icon-order.png" class="col-lg-1" alt="icon email">
+          </div>
+
+          <div class="price-form__tel price-form__box">
+            <input type="tel" class="col-lg-4 col-4" placeholder="Введите ваш телефон ">
+            <img src="./img/icon/number-icon-order.png" class="col-lg-1" alt="icon phone">
+          </div>
+        </div>
+
+        <div class="price-descripton price-box col-12 col-xl-12">
+          <div class="price-descripton__box">
+
+            <div class="price-descripton__text price-descripton__box col-lg-12 col-xl-12">
+              <p>Прайс придет к Вам на почту в течение 5 минут!</p>
+            </div>
+            <div class="price-descripton__icon price-descripton__box price-descripton__box-icon col-lg-5 col-xl-5">
+              <img src="./img/icon/black/clock-icon-order.png" alt="icon time">
+            </div>
+          </div>
+          <div class="price-descripton__btn  price-descripton__box">
+            <button type="submit" class="btn-primary col-lg-4 col-4"><a href="#">Получить прайс</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- END PRICE -->
+
+  <!-- START WAIT -->
+  <section class="wait">
+    <div class="container">
+      <div class="row">
+        <div class="wait-text  col-lg-12 col-sm-12 col-12 center-block wow fadeInUp" data-wow-delay='0.1s'>
+          <div class="wait-text__h">
+            <h2>Вам не придется ждать!</h2>
+          </div>
+          <div class="wait-text__p">
+            <p>
+              Любые запчасти для всех моделей Белаз всегда в наличии!
+            </p>
+          </div>
+        </div>
+
+        <div class="wait-column col-12 col-lg-12 col-md-12 col-xl-12">
+          <div class="wait-column-box col-lg-3 col-md-6 col-xl-6 wow fadeInUp" data-wow-delay='0.1s'>
+            <div class="wait-column__box-img">
+              <img src="./img/icon/white/engine.png" alt="details engine" class="col-ld-3">
+            </div>
+            <div class="wait-column__box-text">
+              <p class="wait-column__box-text-p col-3">Любые типы деталей от шайбы до двигателя!</p>
+            </div>
+          </div>
+          <div class="wait-column-box col-lg-3 col-md-6 col-xl-6 wow fadeInUp" data-wow-delay='0.2s'>
+            <div class="wait-column__box-img">
+              <img src="./img/icon/white/dump-truck.png" alt="" class="col-ld-3">
+            </div>
+            <div class="wait-column__box-text">
+              <p class="wait-column__box-text-p col-3">Все модификации Белаз от 45т до 450 т</p>
+            </div>
+          </div>
+          <div class="wait-column-box col-lg-3 col-md-6 col-xl-6 wow fadeInUp" data-wow-delay='0.3s'>
+            <div class="wait-column__box-img">
+              <img src="./img/icon/white/calendar.png" alt="" class="col-ld-3">
+            </div>
+            <div class="wait-column__box-text">
+              <p class="wait-column__box-text-p col-3">Отгружаем в день заказа!</p>
+            </div>
+          </div>
+          <div class="wait-column-box col-lg-3 col-md-6 col-xl-6 wow fadeInUp" data-wow-delay='0.4s'>
+            <div class="wait-column__box-img">
+              <img src="./img/icon/white/delivery.png" alt="" class="col-ld-3">
+            </div>
+            <div class="wait-column__box-text">
+              <p class="wait-column__box-text-p col-3">Доставим в любое место!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END WAIT -->
+
+  <!-- START SEARCH -->
+  <section class="search" style="background-image: url(./img/bg/bg-price.png); background-size: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="search-text">
+          <div class="search-text__h">
+            <h2>Ищете конкретную деталь?</h2>
+          </div>
+          <div class="search-text__p">
+            <p>Если у Вас есть артикул - введите его в поле ниже и получите цену ПРЯМО СЕЙЧАС!</p>
+          </div>
+        </div>
+        <div class="search-form">
+          <div class="search-form__arcticle search-form__item col-lg-4 col-xl-4">
+            <input type="text" class="col-4" placeholder="Введите артикул детали">
+          </div>
+          <div class="search-form__tel search-form__item col-lg-4 col-xl-4">
+            <input type="tel" class="col-4" placeholder="Введите ваш телефон ">
+            <img src="./img/icon/number-icon-order.png" class="col-lg-1" alt="icon phone">
+          </div>
+          <button class="btn-main search-form__item btn-primary col-lg-4 col-xl-4">
+            <a href="#">Узнать цену</a>
+          </button>
+        </div>
+        <div class="search-tel">
+          <div class="search-tel__text">
+            <p>Мы перезвоним вам в течение 3 минут и назовем цену детали!</p>
+            <p>Или Вы можете перезвонить нам сами:</p>
+          </div>
+          <div class="search-tel__num">
+            <a href="tel:+78182474725"> +7 (818) 247-47-25</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SEARCH -->
+
+  <!-- START GUARANTEE -->
+  <section class="guarantee">
+    <div class="container">
+      <div class="row">
+        <div class="guarantee-text">
+          <h2 class="col-lg-8 col-xl-8">Мы гарантируем сохранность деталей во время перевозки!</h2>
+        </div>
+       <div class="guarantee-box">
+        <div class="guarantee-img col-lg-3  col-md-3 col-xl-3 wow fadeInUp" data-wow-delay='0.1s'>
+          <img src="./img/photo/document.png" class="guarantee-img__item guarantee-img__item-primary col-2"
+            alt="guarantee document">
+          <p class="guarantee-img__text col-4">Гарантия на целостность поставки прописана в договоре</p>
+          <a href="#" class="guarantee-img__link">ПОДРОБНЕЕ</a>
+        </div>
+        <div class="guarantee-img col-lg-4  col-md-3 col-xl-4 wow fadeInUp" data-wow-delay='0.2s'>
+          <img src="./img/stock.png" class="guarantee-img__item col-2" alt="guarantee stock">
+          <p class="guarantee-img__text col-4">Каждая запчасть доставляется с завода в жесткой упаковке</p>
+          <a href="#" class="guarantee-img__link">ПОДРОБНЕЕ</a>
+        </div>
+        <div class="guarantee-img col-lg-4  col-md-3 col-xl-4 wow fadeInUp" data-wow-delay='0.3s'>
+          <img src="./img/guarantee-detailse.png" class="guarantee-img__item col-2" alt="guarantee detailse">
+          <p class="guarantee-img__text col-4">Дополнительный контроль качества нашими специалистами</p>
+          <a href="#" class="guarantee-img__link">ПОДРОБНЕЕ</a>
+        </div>
+       </div>
+      </div>
+    </div>
+  </section>
+  <!-- END GUARANTEE -->
+
+  <!-- START BONUS -->
+  <section class="bonus">
+    <div class="container">
+      <div class="row">
+        <div class="bonus-h col-8">
+          <h2 class="col-lg-8 col-xl-8">У нас разработаны бонусные системы и скидки для наших клиентов</h2>
+        </div>
+        <div class="bonus-sale wow fadeInUp" data-wow-delay='0.1s'>
+          <div class="bonus-sale__box bonus-sale col-lg-3 col-xl-3">
+            <p class="bonus-sale__circle">10%</p>
+            <p class="bonus-sale__text col-3">Дополнительная скидка 10% на вторую запчасть и любые последующие</p>
+          </div>
+          <div class="bonus-sale__box  col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay='0.2s'>
+            <p class="bonus-sale__circle">20%</p>
+            <p class="bonus-sale__text col-3">Скидка 20% при заключении договора на годовое сервисное обслуживание</p>
+          </div>
+          <div class="bonus-sale__bus  bonus-sale__box col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay='0.3s'>
+            <div class="bonus-sale__circle bonus-sale__img-primary">
+              <img src="./img/icon/white/delivery-white.png" alt="">
+            </div>
+            <p class="bonus-sale__text col-3">Бесплатная доставка по всей России для всех клиентов</p>
+          </div>
+          <div class="bonus-sale__support bonus-sale__box  col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay='0.4s'>
+            <div class="bonus-sale__circle bonus-sale__img-primary">
+              <img src="./img/icon/white/support.png" alt="">
+            </div>
+            <p class="bonus-sale__text col-3">Бесплатная круглосуточная техническая поддержка</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END  BONUS -->
+
+  <!-- START QUESTION -->
+  <section class="question">
+    <div class="container">
+      <div class="row">
+        <div class="question-text col-6">
+          <div class="question-text__h col-6">
+            <h2>У Вас остались вопросы?</h2>
+          </div>
+          <div class="question-text__p col-4">
+            <p>На Ваши вопросы отвечает Эдуард</p>
+          </div>
+        </div>
+
+        <div class="question-list col-lg-5 col-md-4">
+          <ol>
+            <li class="question-list__item col-4 col"><a href="" class="question-list__item">Как заказать деталь
+                правильно?</a></li>
+            <div id="card-1" class="question-list__item-ansver d-none question-list__item-card">
+              <p class="edik__card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+
+              <span class="close-1">&times;</span>
+              <p class="edik__card__text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+            <li class="question-list__item col-4 col"><a href="" class="question-list__item">Что делать, если запчасть не
+                понадобилась?</a></li>
+            <div id="card-2" class="question-list__item-ansver d-none question-list__item-card">
+              <p class="edik__card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+
+              <span class="close-1">&times;</span>
+              <p class="edik__card__text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+            <li class="question-list__item col-4 col"><a href="" class="question-list__item">Можете ли Вы установить
+                деталь?</a></li>
+            <div id="card-3" class="question-list__item-ansver d-none question-list__item-card">
+              <p class="edik__card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+
+              <span class="close-1">&times;</span>
+              <p class="edik__card__text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+            <li class="question-list__item col-4 col"><a href="" class="question-list__item">В чем преимущества оригинальных
+                деталей?</a></li>
+            <div id="card-4" class="question-list__item-ansver d-none question-list__item-card">
+              <p class="edik__card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+
+              <span class="close-1">&times;</span>
+              <p class="edik__card__text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+            <li class="question-list__item col-4 col"><a href="" class="question-list__item">В чем преимущества оригинальных
+                деталей?</a></li>
+            <div id="card-5" class="question-list__item-ansver d-none question-list__item-card">
+              <p class="edik__card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+
+              <span class="close-1">&times;</span>
+              <p class="edik__card__text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+          </ol>
+          <div class="question-list__more col-2">
+            <img src="./img/icon/white/reload.png" alt=""><a href="#">Еще вопросы</a>
+          </div>
+        </div>
+
+        <div class="question-img col-lg-6 col-xl-6 col-md-6">
+          <img src="./img/photo/Photo-detailse.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END QUESTION -->
+
+  <!-- START COMFORT -->
+  <section class="comfort">
+    <div class="container">
+      <div class="row">
+        <div class="comfort-text col-6">
+          <div class="comfort-text__h col-6">
+            <h2>С нами удобно работать!</h2>
+          </div>
+          <div class="comfort-text__p col-6">
+            <p>Более 70% клиентов приходят к нам по рекомендации!</p>
+          </div>
+        </div>
+
+        <div class="comfort-work">
+          <div class="comfort-work__prepayment comfort-work__box col-lg-2 col-xl-2 wow fadeInUp" data-wow-delay='0.1s'>
+            <div class="comfort-work__prepayment-img">
+              <img src="./img/icon/color/prepayment.png" class="comfort-work__box-img" alt="">
+            </div>
+            <p class="comfort-work__prepayment-text">Вы вносите предоплату в размере 50% от стоимости запчасти</p>
+          </div>
+          <div class="comfort-work__during comfort-work__box col-lg-2 col-xl-2 wow fadeInUp" data-wow-delay='0.2s'>
+            <div class="comfort-work__during-img">
+              <img src="./img/icon/color/during.png" classsclass="comfort-work__box-img" alt="">
+            </div>
+            <p class="comfort-work__during-text">Отправляем запчасти в день заказа </p>
+          </div>
+          <div class="comfort-work__check comfort-work__box col-lg-2 col-xl-2 wow fadeInUp" data-wow-delay='0.3s'>
+            <div class="comfort-work__check-img">
+              <img src="./img/icon/color/check.png" class="comfort-work__box-img" alt="">
+            </div>
+            <p class="comfort-work__check-text">Получаете деталь, проверяете, оплачиваете оставшиеся 50% </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END COMFORT -->
+
+  <!-- START SCLAD -->
+  <section class="sclad">
+    <div class="container">
+      <div class="row">
+        <div class="sclad-text col-8">
+          <div class="sclad-text__h col-6">
+            <h2>У нас собственный склад!</h2>
+          </div>
+          <div class="sclad-text__p col-8">
+            <p>Это позволяет нам быстро обрабатывать запросы и отгружать детали в день заказа!</p>
+          </div>
+
+        </div>
+
+        <div class="sclad-galery">
+          <div class="sclad-galery__img  col-xl-4 col-lg-4 col-md-3 wow fadeInDown" data-wow-delay='0.1s'>
+            <div class="sclad-galery__img-front front"><img src="./img/photo/sklad-photo-1.jpeg" class="col" alt="">
+            </div>
+            <div class="sclad-galery__img-back back left">
+              <span>Гарантия на целостность поставки прописана в договоре</span>
+              <a href="#">Подробнее по телефону</a>
+            </div>
+          </div>
+          <div class="sclad-galery__img  col-xl-4 col-lg-4 col-md-3 wow fadeInDown" data-wow-delay='0.2s'>
+            <div class="sclad-galery__img-front front"><img src="./img/photo/sklad-photo-2.jpeg" class="col" alt="">
+            </div>
+            <div class="sclad-galery__img-back back left">
+              <span>Площадь 10.000 м&#178;</span>
+              <a href="#">Подробнее по телефону</a>
+            </div>
+          </div>
+          <div class="sclad-galery__img  col-xl-4 col-lg-4 col-md-3 wow fadeInDown" data-wow-delay='0.3s'>
+            <div class="sclad-galery__img-front front"><img src="./img/photo/sklad-photo-3.jpeg" class="col" alt="">
+            </div>
+            <div class="sclad-galery__img-back back left">
+              <span>Бесплатная круглосуточная техническая поддержка</span>
+              <a href="#">Подробнее по телефону</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END SCLAD -->
+
+  <!-- START MOBILE-BRIGADE -->
+  <section class="mobile-brigade">
+    <div class="container">
+      <div class="row">
+        <div class="mobile-brigade__h col-8">
+          <h2>У нас в штате есть мобильные бригады, готовые выехать на сервисное обслуживание,ремонт и проведение
+            диагностики!</h2>
+        </div>
+        <div class="mobile-brigade__box col-lg-4 col-md-4 col-xl-4">
+          <div class="mobile-brigade__box-img col-4 wow fadeInDown" data-wow-delay='0.1s'><img
+              src="./img/icon/color/check-out.png" alt=""></div>
+          <div class="mobile-brigade__box-text col-lg-4">
+            <p>Организуем выезд специалистов в течение двух дней</p>
+          </div>
+        </div>
+        <div class="mobile-brigade__box col-lg-3 col-md-3 col-xl-4">
+          <div class="mobile-brigade__box-img col-4 wow fadeInDown" data-wow-delay='0.2s'><img
+              src="./img/icon/color/equipment.png" alt=""></div>
+          <div class="mobile-brigade__box-text col-lg-4">
+            <p>Бригады укомплектованы всем необходимым оборудованием для производства работ любой сложности</p>
+          </div>
+        </div>
+        <div class="mobile-brigade__box col-lg-4 col-md-3 col-xl-4">
+          <div class="mobile-brigade__box-img col-4 wow fadeInDown" data-wow-delay='0.3s'><img
+              src="./img/icon/color/training.png" alt=""></div>
+          <div class="mobile-brigade__box-text col-lg-4">
+            <p>Все специалисты проходят обучение и ежегодную аттестацию</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END MOBILE-BRIGADE -->
+
+  <!-- START PHONETIC -->
+  <section class="phonetic" style="background-image: url(./img/bg/bg-uploading.png);">
+    <div class="container">
+      <div class="row">
+        <div class="phonetic-h w-100 p-3">
+          <p>Если Вам необходима бесплатная консультация по вопросу обслуживания</p>
+        </div>
+        <div class="phonetic-number col-4">
+          <p>Звоните нам по телефону:</p>
+          <a href="tel:78182474725" class="phonetic-number__item"> +7 (818) 247-47-25</a>
+        </div>
+        <div class="phonetic-form col-6">
+          <form action="index.html">
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите ваш номер телефона"
+              class="phonetic-form__number col-lg-4 col-xl-6">
+            <button type="submit" class="phonetic-btn col-lg-4 col-xl-6">Перезвонить сейчас</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END PHONETIC -->
+
+  <!-- START OFFICE -->
+  <section class="us-office" style="background: url(./img/bg/bg-office.png) center no-repeat; background-size: auto;"
+    <div class="container">
+      <div class="row">
+        <div class="us-office__text col-4">
+          <p>Приезжайте в наш офис!</p>
+        </div>
+        <div class="us-office__contacts col-4">
+          <p>г. Киев, Контрактовая-Площадь, оф. 3725</p>
+          <a href="tel:78182474725" class="phonetic-number__item"> +7 (818) 247-47-25</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END  OFFICE -->
+
+  <!-- START  -->
+  <section class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.5278341326284!2d30.511578207608!3d50.4659907755043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce6aeb46254f%3A0x8e70cf5f182d1883!2z0JrQvtC90YLRgNCw0LrRgtC-0LLQsNGPINC_0LvQvtGJ0LDQtNGM!5e0!3m2!1sru!2sua!4v1573062087761!5m2!1sru!2sua"
+      width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </section>
+  <!-- END  -->
+
+  <!-- START  -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-logo col-lg-3 col-xl-3">
+          <img src="./img/icon/logo.png" alt="">
+        </div>
+        <div class="footer-text col-lg-4 col-xl-4">
+          <span>&#169; 2016, CДЕЛАНО С &#173; <span>&#9829;</span> &#173; КОМАНДОЙ Galexis</span>
+        </div>
+        <div class="footer-contacts col-lg-2 col-xl-2 justify-content-end">
+          <p>Есть вопросы? Звоните!</p>
+          <a href="tel:78182474725" class="phonetic-number__item">+7 (818) 247-47-25</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END  -->
+  <script src="./js/wow.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
